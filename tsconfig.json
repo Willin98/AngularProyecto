@@ -2,6 +2,12 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@film/*": ["src/app/@public/*"],
+      "@admin/*": ["src/app/@admin/*"],
+      "@admin-core/*": ["src/app/@admin/core/*"],
+      "@film-core/*": ["src/app/@public/core/*"]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
