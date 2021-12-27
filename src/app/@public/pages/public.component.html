@@ -1,6 +1,34 @@
-<app-header></app-header>
-<app-navbar></app-navbar>
-<div id="main">
-    <router-outlet></router-outlet>
+<!-- ======= Header ======= -->
+  
+<header id="header" class="fixed-top header-inner-pages">
+    
+    <app-navbar></app-navbar>
+
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<!--<section id="hero">
+<div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+  <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+  <div class="carousel-inner" role="listbox">
+
+  </div>
+
 </div>
+</section>--><!-- End Hero -->
+
+<main id="main">
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact section-bg p-12">
+  <div class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
+</section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
 <app-footer></app-footer>
