@@ -1,3 +1,5 @@
+import { UsersService } from '@core/services/users.service';
+import { AuthService } from '@core/services/auth.service'; 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private usersApi: UsersService, private auth: AuthService) { }
 
   ngOnInit(): void {
+   
+  /*this.usersApi.getUsers().subscribe(result => {
+      console.log(result);
+    });
+
+    this.auth.getMe().subscribe( result => {
+      console.log(result);
+    });*/
   }
 
 }
